@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut-icon" type ="image/jpg" href="music-note.png" />
+    <title>TopMusic</title>
+    <link rel="icon" href="music-note.png" type="icon"/>
+  <!--boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--boostrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    function get(){
+        btn="thank you for your comment. "
+        alert(btn);
+    }
+</script>
+
+  <style>
+       *{
+          margin:0;
+          padding:0;
+          box-sizing:border-box;
+      }
+      a{
+          text-decoration:none;
+          color:black;
+          
+      }
+      ul{
+          list-style:none;
+      }
+      .header{
+          width:100%;
+          height:60vh;
+          background-color:#fff;
+          position:relative;
+      }
+      .header .navbar{
+          width:100%;
+          height:80px;
+          display:flex;
+          justify-content:space-between;
+          align-items: center;
+          position:absolute;
+          margin-bottom:40px;
+      }
+      .logo img{
+        margin-left:100px;
+      }
+      .menu ul li {
+          display: inline-block;
+          padding:0 25px;
+          cursor: pointer;
+          font-size: 23px;
+          font-weight: 700;
+          line-height: 80px;
+          align-items:center;
+      }
+      .menu ul li:HOVER {
+          COLOR:blue;
+      }
+      .logo img{
+          width:50px;
+      }
+       .logo a{
+          text-decoration: none;
+          font-size:40px;
+          font-weight:400;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color:blueviolet;
+      }
+      a:hover{
+          color:rgb(17, 0, 255);
+      }
+      .login-btn{
+          display:block;
+          font-size: 19px;
+          font-weight: 700;
+          cursor: pointer;
+          border-radius: 30px;
+          background-color: #f3ef51;
+          padding: 8px 40px;
+          margin-right:100px;
+          
+      }
+      .fils{
+        margin-top:180px;
+        
+      }
+     
+      .fils h1{
+          font-size:30px;
+          font-weight:400;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color:black;
+          text-transform: uppercase;
+      }
+      .fils p{
+          font-size:20px;
+          font-weight:400;
+          font-family:'Times New Roman', Times, serif;
+          color:black;
+      }
+      .fils button{
+            background-color:#f3ef51;
+            color:black;
+            font-size:30px;
+            font-weight:600;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border:2px solid #fff;
+            padding:8px;
+            padding-left:8px;
+            padding-right:8px;
+            border-radius:15px;
+            
+        }
+        .fils{
+            width: 50%;
+            float:left ;
+            padding-left:50px;
+            margin-bottom:220px;
+            margin-left:10px;
+        }
+        .picture img{
+            width:600px;
+            float:right;
+            margin-top:-470px;
+            
+        }
+        .About {
+           margin-top:230px;
+           margin-left:140px;
+    
+        }
+        .About h3{
+            color:#504f03;
+            font-size:40px;
+            font-weight:400;
+            font-family:'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+        .About span{
+            color:rgb(121, 121, 180);
+            font-size:20px;
+            font-weight:500;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        }
+        .Menu{
+            margin-top:80px;
+            margin-left:140px;
+        }
+        .Menu h3{
+            color:#504f03;
+            font-size:40px;
+            font-weight:400;
+            font-family:'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+        .Menu ul li {
+            color:rgb(121, 121, 180);
+            font-size:20px;
+            font-weight:500;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .group table tr td {
+            color:rgb(121, 121, 180);
+            font-size:20px;
+            font-weight:500;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: aliceblue; 
+           
+        }
+        .group h3{
+            color:#504f03;
+            font-size:40px;
+            font-weight:400;
+            font-family:'Times New Roman', Times, serif;
+            text-decoration: underline;  
+        }
+        .group{
+            margin-top:80px;
+            margin-left:140px;
+        }
+        .Galery table tr td {
+            padding-left:30px;
+           padding-top:6px;
+            margin:0;
+            FONT-SIZE:20PX;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:300;
+            color:#1632d3;
+            text-decoration: underline;
+           
+        }
+        .Galery img{
+            width:500px;
+            height:300px;
+        }
+        .Galery{
+            margin-left:60px;
+        }
+        #contact h1{
+            margin-top:100px;
+            text-shadow:1px 1px 1px black;
+            border-bottom:2px solid #1dec6c;
+            font-size :50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:700;
+            padding-top:10px;
+
+        }
+        .col .form{
+            width:300px;
+            padding-bottom:17px;
+            font-size:20px;
+            font-weight:500;
+            color:black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #comment{
+            width:1160px;
+            height:60px;
+            font-size:20px;
+            font-weight:500;
+            color:black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        #web {
+            background-color:#fff;
+            color:rgb(30, 7, 243);
+            font-size:30px;
+            font-weight:600;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border:2px solid #10b80b;
+            
+           
+            margin-top:10px;
+            border-radius:15px;
+            margin-left :400px;
+            padding-left:15px;
+            padding-right:15px;
+            
+        }
+        #footer{
+        background-color:black;
+        padding:7px;
+        margin:0;
+        }
+        .col h3{
+            font-size:30px;
+            font-weight:700;
+            font-family:'Times New Roman', Times, serif;
+            color:#fff;
+        }
+        .col h4{
+            font-size:30px;
+            font-weight:700;
+            font-family:'Times New Roman', Times, serif;
+            color:#fff;
+        }
+        .col p{
+            font-size:20px;
+            font-weight:700;
+            font-family:'Times New Roman', Times, serif;
+            color:#8cdbe0;
+        }
+        strong{
+            font-size:20px;
+            font-weight:700;
+            font-family:'Times New Roman', Times, serif;
+            color:#fff;
+        }
+        .col ul li i{
+            font-size:20px;
+            font-weight:700;
+            font-family:'Times New Roman', Times, serif;
+            color:#8cdbe0;
+        }
+        .copyright span{
+            font-size:20px;
+            font-weight:700;
+            font-family:'Times New Roman', Times, serif;
+            color:#8cdbe0;
+        }
+  </style>
+</head>
+<body>
+  <div class="header">
+      <div class="navbar">
+          <div class="logo">
+              <a href="#"><img src="music-note.png">TopMusic</a>
+          </div>
+          <div class="menu">
+              <ul>
+                 <LI>Home</LI>
+                  <LI>About </LI>
+                 <a href="#ME" ><li>Menu </li></a>
+                  <a href="#gall"><li>Gallery</li></a>
+                  <a href="#mh"><li>Contact</li></a>
+              </ul>
+              </div>
+              <div class="login-btn"><a href="musiclogin.html">login</a></div></div>
+          <div class="group">
+              <div class="fils">
+                  <h1>Enjoy yourself<br>the best music</h1>
+                  <p>Download the best <br>songs with TopMusic 2023.</p>
+                  <a href="getstarted.html"><button title="Get started"> Get started</button></a>
+              </div>
+         </div>
+         <div class="picture"><img src="pink-headphone-with-music-notes-background_1308-26783.webp"/></div>
+      </div>
+    </div> 
+    <div class="About">
+        <h3>What is music ?</h3>
+       <span>Music can improve mood,and facilate opportunities for emotional expression.<br>it can reduces stress ,stimulates memories and increases workout endurance.</span>
+    </div>
+    <div  class="Menu">
+        <h3>Menu</h3>
+        <ul>
+           <li>Morocco music</li> 
+            <li>International music</li>
+            <li>India music</li>
+            <li>Korean music</li>
+            <li>Rock music</li>
+        </ul>
+    </div>
+    <div class="Gallery">
+        <div class="group">
+            <h3>Download Morocco songs :</h3>
+            <table><tr><td><a href="Ayoub Anbaoui - Abala Ya Bali ( Officiel Video ).mp3">Ayoub Anbaoui - Abala Ya Bali .mp3</a></td></tr>
+            <TR><td><a href="Morad-Ojos-Sin-Ver-Ft-ElGrandeToto-(HiphopMood.com).mp3">Morad-Ojos-Sin-Ver.mp3</a></td></TR>
+            <tr><td><a href="01.-Saad-Lamjarred---Ach-Khbarek.mp3">Saad-Lamjarred---Ach-Khbarek.mp3</a></td></tr>
+           <tr><td><a href="_01.-Hatim-Ammor---Heeya.mp3">Hatim-Ammor---Heeya.mp3</a></td></tr>
+           <tr><td><a href="m302650.mp3">Mahmoud Al Turky-عاشق مجنون </a></td></tr>
+           <tr><td><a href="m300203 (1).mp3">Zouhair bahaoui-crushi</a></td></tr>
+         <tr><td><a href="m301814.mp3">Nouaiman Bel aiachi-Massari</a></td></tr>
+          <tr><td><a href="Hatim Ammor - Viva Morocco ( Version Fifa World Cup 2022 ) (256  kbps) (shabakngy.com).mp3">Hatim Ammor - Viva Morocco ( Version Fifa World Cup 2022 ).mp3</a></td></tr>
+          <tr><td><a href="MOHA K x DYSTINCT x YAM - DARBA 9ADIYA (Lyrics video) (1).mp3">MOHA K x DYSTINCT x YAM - DARBA 9ADIYA .mp3</a></td></tr>
+          <tr><td><a href="maxzik.com - Draganov - WILI.mp3">maxzik.com - Draganov - WILI.mp3</a></td></tr>
+        <tr><td><a href="Marwa Loud, @MohaK - Ghir Ntiya (Clip Officiel) (256  kbps) (shabakngy.com).mp3">Marwa Loud, @MohaK - Ghir Ntiya .mp3</a></td></tr>
+    <tr><td><a href="Manal - NTA (Official Music Video) _ منال - انت (فيديو كليب).mp3">Manal - NTA.mp3</a></td></tr>
+        <tr><td><a href="MANAL - MAKHELAW MAGALOU (Official Music Video) (256  kbps) (shabakngy.com).mp3">MANAL - MAKHELAW MAGALOU .mp3</a></td></tr>
+       <tr><td><a href="music_test2_اغاني مغربية_Ta-Ha-Belhda_01.Ta Ha - Belhda  طه نوري - بالهدى.mp3">Ta-Ha-Belhda.mp3</a></td></tr>
+    <tr><td><a href="music_test2_اغاني مغربية_OualiD-Cravata-2023-Ya-Nari_01.OUALID - YA NARI FT. CRAVATA (2).mp3">OualiD-Cravata-2023-Ya-Nari.mp3</a></td></tr>
+   <tr><td><a href="music_test2_اغاني مغربية_DYSTINCT-Ghazali_01.DYSTINCT - Ghazali   ديستانكت - غزالي (1).mp3">DYSTINCT-Ghazali_01.DYSTINCT - Ghazali. mp3</a></td></tr>
+<tr><td><a href="music_test2_اغاني مغربية_DYSTINCT-2023-Tek-Tek_01.DYSTINCT – Tek Tek   ديستانكت - تك تك.mp3">DYSTINCT-2023-Tek-Tek_01.DYSTINCT .mp3</a></td></tr>
+ <tr><td><a href="music_test2_أغاني راي الجزائر_Mocci-Talet-Lghiba_01.Mocci - Talet Lghiba (1).mp3">Mocci-Talet-Lghiba.mp3</a></td></tr>
+ <tr><td><a href="music_test2_أغاني الراب المغاربي_Dizzy-DROS-2023-M3A-L3ECHRANE_01.Dizzy DROS - M3A L3ECHRANE.mp3">Dizzy-DROS-2023-M3A-L3ECHRAN.mp3</a></td></tr>
+<TR><TD><a href="OUENZA - LA TETE (MIXTAPE ALAM).mp3">OUENZA - LA TETE.mp3</A></TD></TR>
+<TR><TD><A HREF="SNOR - DAWK LIYA aghani.club.mp3">SNOR - DAWK LIYA aghani.mp3</A></TD></TR></table>
+        </div>
+        <div class="group">
+            <h3>Download  India songs :</h3>
+            <table><tr><td><a href="music_test2_اغاني هندية_تحميل-اغاني-هندية-2023_15.Dehati Disco.mp3">Dehati Disco.mp3</a></td></tr>
+            <TR><td><a href="music_test2_اغاني هندية_اغاني-هندية-2018_Jee Ve Sohaneya.mp3">Jee Ve Sohaneya.mp3</a></td></TR>
+            <tr><td><a href="music_test2_اغاني هندية_تحميل-اغاني-هندية-2023_17.hoye-ishq-na.mp3">hoye-ishq-na.mp3</a></td></tr>
+           <tr><td><a href="music_test2_اغاني هندية_تحميل-اغاني-هندية-2023_Janam Janam – Dilwale.mp3">Janam Janam – Dilwale.mp3</a></td></tr>
+           <tr><td><a href="music_test2_اغاني هندية_تحميل-اغاني-هندية-2023_Phurrr (Film Version).mp3">Phurrr .mp3</a></td></tr>
+           <tr><td><a href="Tujh Mein Rab Dikhta Hai Song _ Rab Ne Bana Di Jodi _ Shah Rukh Khan, Anushka Sharma _ Roop Kumar.mp3">Tujh Mein Rab Dikhta Hai Song _ Anushka Sharma _ Roop Kumar.mp3</a></td></tr>
+         <tr><td><a href="اكثر 10 اغاني اسمعها لشاروخان Top 10 SRK Favorite Songs.mp3">Top 10 SRK Favorite Songs.mp3</a></td></tr></table>
+        </div>
+        <div class="group">
+            <h3>Download International songs :</h3>
+            <table><tr><td><a href="DHARIA - Sugar _ Brownies (by Monoir) [Official Video](MP3_320K).mp3">DHARIA - Sugar _ Brownies .mp3</a></td></tr>
+            <TR><td><a href="Britney Spears - ...Baby One More Time (Official Video) (256  kbps) (shabakngy.com).mp3">Britney Spears - ...Baby One More Time .mp3</a></td></TR>
+            <tr><td><a href="Beyoncé - Yoncé (Video).mp3">Beyoncé - Yoncé (Video).mp3</a></td></tr>
+           <tr><td><a href="Eminem - Lose Yourself [HD] (256  kbps) (shabakngy.com).mp3">Eminem - Lose Yourself.mp3</a></td></tr>
+           <tr><td><a href="Ed Sheeran - Shape of You (Official Music Video)(MP3_320K).mp3">Ed Sheeran - Shape of You.mp3</a></td></tr>
+           <tr><td><a href="DJ Snake ft. Justin Bieber - Let Me Love You [Lyric Video](MP3_320K).mp3"> Justin Bieber - Let Me Love You .mp3</a></td></tr>
+         <tr><td><a href="DJ Gimi-O x Habibi [Albanian Remix] (Lyrics)(MP3_320K).mp3">DJ Gimi-O x Habibi .mp3</a></td></tr>
+          <tr><td><a href="Luis Fonsi - Despacito ft. Daddy Yankee(MP3_320K).mp3">Luis Fonsi - Despacito ft. Daddy Yankee.mp3</a></td></tr>
+          <tr><td><a href="Katy Perry - Roar.mp3">Katy Perry - Roar.mp3</a></td></tr>
+        <tr><td><a href="J Balvin_ Willy William - Mi Gente (Official Video(MP3_128K).mp3"> Balvin_ Willy William - Mi Gente .mp3</a></td></tr>
+    <tr><td><a href="Major Lazer _ DJ Snake - Lean On (feat. MØ) (Official Music Video)(MP3_160K).mp3">Major Lazer _ DJ Snake - Lean On .mp3</a></td></tr>
+        <tr><td><a href="music_test2_اغاني اجنبية_تحميل-اغاني-اجنبية-2023_اغاني اجنبية 2023 (57).mp3">music_test.mp3</a></td></tr>
+       <tr><td><a href="Post_Malone_-_Rockstar_ft._21_Savage_(HAYASA_G_x_ERS_Remix)___FAST___FURIOUS.mp3">Post_Malone_-_Rockstar_ft._21_Savage.mp3</a></td></tr>
+    <tr><td><a href="Taylor Swift - Blank Space.mp3">Taylor Swift - Blank Space.mp3</a></td></tr>
+   <tr><td><a href="simpa pa pa...------(MP3_320K).mp3">simpa pa pa.mp3</a></td></tr>
+<tr><td><a href="Serena - Safari (Official Video)(MP3_128K).mp3">Serena - Safari.mp3</a></td></tr>
+ <tr><td><a href="اجمل اغاني مايكل جاكسون.mp3">اجمل اغاني مايكل جاكسون.mp3</a></td></tr>
+ <tr><td><a href="اقوى_ريمكس_اجنبي_في_2021___حماسي_جدا_-_مطلوب_اكثر_شي___Such_a_Whore_(192_kbp.mp3">اقوى_ريمكس_اجنبي_في_2021_Such_a_Whore.mp3</a></td></tr>
+<TR><TD><a href="أغنية أجنبية خيالية مترجمة ❤--Bahjat - Hometown Smile(MP3_70K).mp3">Bahjat - Hometown Smile.mp3</A></TD></TR>
+
+<TR><TD><A HREF="اغنية اجنبية حمااسية روعة _ Sabes Tu _ اجمل الاغاني(MP3_160K).mp3">اغنية اجنبية حمااسية روعة _ Sabes Tu _ اجمل الاغاني.mp3</A></TD></TR>
+<tr><td><a href="اغاني_دي_جي--_⚠️ريمكس_ديسكو_2021⚠️--2022_(فيديو).mp3">--2022_(فيديو).mp3</a></td></tr></table>
+        </div>
+        <div class="group">
+            <h3>Download Korean songs :</h3>
+            <table><tr><td><a href="music_test2_اغاني اجنبية_اغاني-كورية-2019_05.Na haeun So special (1).mp3">Na haeun So special.mp3</a></td></tr>
+            <TR><td><a href="اروع اغنية الفرقة كورية بي تي اس رقص احتراف جديد 2021  BTS 'Boy  With Luv' mirrored Dance Practice (2).mp3"> BTS 'Boy  With Luv' mirrored Dance Practice.mp3</a></td></TR>
+            <tr><td><a href="اجمل اغنيه كوريه حماس 👍 (1).mp3"> 2023\اجمل اغنيه كوريه حماس 👍.mp3</a></td></tr>
+           <tr><td><a href="اجمل اغنية كورية لي فرقة NU'EST (دهري عصام).mp3">NU'EST (دهري عصام).mp3</a></td></tr></table>
+        </div>
+        <div class="group">
+            <h3>Download Rock songs :</h3>
+            <table>
+            <TR><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_37. Lindsey Stirling - Shatter Me (Feat. Lzzy Hale).mp3"> Lindsey Stirling - Shatter Me (Feat. Lzzy Hale).mp3</a></td></TR>
+            <tr><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_25. Amberian Dawn - Magic Forest.mp3">Amberian Dawn - Magic Forest.mp3</a></td></tr>
+           <tr><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_16. Evanescence - Bring Me To Life.mp3"> Evanescence - Bring Me To Life.mp3</a></td></tr>
+           <tr><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_15.Killing My Dreams.mp3">Killing My Dreams.mp3</a></td></tr>
+           <tr><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_05.Originem (1).mp3">Originem.mp3</a></td></tr>
+         <tr><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_64.Black Ninja.mp3">Black Ninja.mp3</a></td></tr>
+        <tr><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_52.Woo Woo.mp3">Woo Woo.mp3</a></td>
+        </tr><tr><td><a href="music_test2_اغاني اجنبية_اغاني-روك-صاخبة_45.Hold Back The Night.mp3">Hold Back The Night (1).mp3</a>
+        </td></tr></table>
+        </div>
+    </div> 
+    <div class="about">
+        <div class="Galery">
+           <table><tr><td><img src="oriental-tea-concept_23-2148129865.webp" /><br>Enjoy the best Morocco songs with TopMusic 2023 </td><td><img src="c:\Users\LENOVO\Desktop\Best music 2023\caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_155003-32526.webp" ><br>Enjoy the best  songs with TopMusic 2023</td></tr>
+            <tr><td><img src="flat-world-rock-day-background-with-musical-instruments_23-2149449697.webp"><br>Enjoy the best Rock songs with TopMusic 2023</td><td><img src="c:\Users\LENOVO\Desktop\Best music 2023\hand-drawn-bharatanatyam-illustration_23-2149612640.webp" ><br>Enjoy the best India songs with TopMusic 2023</td></tr>
+            <tr><td><img src="carefree-joyful-asian-woman-with-pink-hair-catches-every-bit-song-listens-favorite-music-via-headphones-wears-white-turtleneck-carries-bag-poses-against-rosy-studio-background-good-tunes-ears_273609.webp" ><br>Enjoy the best Korean songs with TopMusic 2023</td><td><img src="c:\Users\LENOVO\Desktop\Best music 2023\people-together-enjoying-music_53876-29120.webp" ><br>Enjoy the best International songs with TopMusic 2023</td></tr>
+        </table>
+        </div>
+    </div> 
+    <div class="footer">
+        <div class="container" id="contact">
+            <h1 class="text-center">
+                contact us
+            </h1>
+            <div class="row">
+                <div class="col">
+                    <INPUT TYPE="text" class="form" placeholder="Name" required/>
+                </div>
+                <div class="col">
+                    <INPUT TYPE="e-mail" class="form" placeholder="e-mail" required />
+                </div>
+                <div class="col">
+                    <INPUT TYPE="phone" class="form" placeholder="phone" required/>
+                </div>
+                <div class="form--group" style="margin-top:30px;">
+                    <textarea class="form-control"  id="comment"  rows="10" placeholder="message"></textarea>
+                </div>
+                <div id="btn" class="text-center"><button class="web" type="submit" id="web" onclick="javascipt:get();">Message</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="margin-top:50px;">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>TopMusic</h3>
+                        <p>
+                           Home<br>
+                           About<br>
+                            Menu <br>
+                            Gallery<br>
+                        </p>
+                       
+                    </div>
+                    <div class="col">
+                        <h4>Userfull links</h4>
+                        <ul>
+                            <li><i class="bx">Home</i></li>
+                            <li><i class="bx">About</i></li>
+                             <li><i class="bx">Menu</i></li>
+                             <li><i class="bx">Gallery</i></li>
+                        </ul>
+                    </div>
+                        <div class="copyright">
+                        <strong class="strong">Contry : <strong>Morocco</strong></strong><br>
+                       <strong class="strong">Phone :<strong>+212762047578</strong></strong><br>
+                       <strong class="strong">E-mail :<strong>barmaje2023@gmail.com</strong></strong><br>
+                            <span>&copy;copyright</span><strong><span>TopMusic</span></strong><span>.All rights Reserved</span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>     
+</body>
+</html>
